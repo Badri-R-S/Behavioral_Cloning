@@ -53,10 +53,13 @@ def telemetry(sid, data):
     if data:
         # The current steering angle of the car
         steering_angle = data["steering_angle"]
+        print(steering_angle)
         # The current throttle of the car
         throttle = data["throttle"]
+        print(throttle)
         # The current speed of the car
         speed = data["speed"]
+        print(speed)
         # The current image from the center camera of the car
         imgString = data["image"]
         image = Image.open(BytesIO(base64.b64decode(imgString)))
