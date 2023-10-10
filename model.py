@@ -17,7 +17,7 @@ validation_split = 0.2
 correction = 0.2
 
 lines = []
-with open('/home/badri/Desktop/SDC/CarND-Behavioral-Cloning-P3/data/driving_log.csv') as csvfile:
+with open('../data/driving_log.csv') as csvfile:
     reader = csv.reader(csvfile)
     next(reader)
     for line in reader:
@@ -36,7 +36,7 @@ def generator(samples, batch_size):
                 for i in range(3):
                     source_path = batch_sample[i]
                     filename= source_path.split('/')[-1]
-                    curr_path = '/home/badri/Desktop/SDC/CarND-Behavioral-Cloning-P3/data/IMG/' + filename
+                    curr_path = '../data/IMG/' + filename
                     image = cv2.imread(curr_path)
                     images.append(image)
     
