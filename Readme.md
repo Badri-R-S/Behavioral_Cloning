@@ -18,8 +18,9 @@ Each image was normalized and mean-centered to improve numerical stability,remov
 ## Architecture
 Several networks such as LeNet and AlexNet were implemented and tested, but the best performance was provided by NVIDIA's autonomous driving team's network.
 <p align="center">
-<img width="500" height="250" src=
-
+<img width="500" height="250" src="https://github.com/Badri-R-S/Behavioral_Cloning/blob/master/examples/cnn-architecture.png"
+</p>
+  
 ## Testing the model
 To test your model, run: `python network_file-name.py model.h5`,
 where `network_file_name` is the name of the python file where the network is defined. A `.h5` file easily stores the weights and model configuration in a single file. `model.h5` can be generated using Keras.
