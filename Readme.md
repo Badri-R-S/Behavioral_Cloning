@@ -24,5 +24,6 @@ Several networks such as LeNet and AlexNet were implemented and tested, but the 
 ## Testing the model
 To test your model, run: `python network_file-name.py model.h5`,
 where `network_file_name` is the name of the python file where the network is defined. A `.h5` file easily stores the weights and model configuration in a single file. `model.h5` can be generated using Keras.
-
-
+<p align="center">
+<img src="https://github.com/Badri-R-S/Behavioral_Cloning/blob/master/examples/behavioral_cloning_gif.gif"
+  </p>
