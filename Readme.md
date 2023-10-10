@@ -13,7 +13,7 @@ In this project, an end-to-end deep learning using convolutional neural networks
 Since this project is based on Behavioural Cloning, training data had to be generated, by controlling the car in the simulator. Using the mouse and keyboard commands, the car was driven around the course, in the simulator. The cameras in front of the cameras capture photos continuously. For each frame of the image, the feature or image was stored in a file & the corresponding label measurement for the steering angle was also captured via a driving log (`.csv`) file.
 
 ## Data Preprocessing
-Each image was normalized and mean-centered to improve numerical stability,removing bias in the images and reduce overfitting. Additionally, using a `Cropping2D Layer` I was able to crop the images 75 pixels from the top of each frame and 20 pixels from the bottom. This was done to increase the performance time for the model to focus only on the areas that require training for the steering angle. 
+Each image was normalized and mean-centered to improve numerical stability, removing bias in the images and reducing overfitting. Additionally, using a `Cropping2D Layer` the images were cropped 75 pixels from the top of each frame and 20 pixels from the bottom. This was done to increase the performance time for the model to focus only on the areas that require training for the steering angle. 
 
 ## Architecture
 Several networks such as LeNet and AlexNet were implemented and tested, but the best performance was provided by NVIDIA's autonomous driving team's network.
